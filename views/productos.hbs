@@ -1,0 +1,17 @@
+{{! Extiende main.hbs }}
+{{! Archivo: views/productos.hbs }}
+<h1>Lista de Productos</h1>
+
+<ul id="lista-productos">
+  {{#each productos}}
+    <li>
+      <strong>{{nombre}}</strong> - ${{precio}} <br>
+      <button onclick="agregarAlCarrito('{{_id}}', '{{nombre}}')">Agregar al carrito</button>
+    </li>
+  {{/each}}
+</ul>
+
+
+
+<script src="/js/productos.js"></script>
+

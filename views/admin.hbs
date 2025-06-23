@@ -1,0 +1,28 @@
+<h1>Administrador de Productos</h1>
+
+<h2>Agregar nuevo producto</h2>
+<form id="form-crear">
+  <input type="text" name="nombre" placeholder="Nombre" required>
+  <input type="text" name="descripcion" placeholder="Descripción" required>
+  <input type="number" name="precio" placeholder="Precio" required>
+  <input type="number" name="stock" placeholder="Stock" required>
+  <button type="submit">Agregar</button>
+</form>
+
+<hr>
+
+<h2>Lista de productos</h2>
+<ul id="lista-productos">
+  {{#each productos}}
+    <li data-id="{{this._id}}">
+      <strong>{{this.nombre}}</strong> - ${{this.precio}} (Stock: {{this.stock}})
+      <button onclick="editarProducto('{{this._id}}')">Editar</button>
+      <button onclick="eliminarProducto('{{this._id}}')">Eliminar</button>
+    </li>
+  {{/each}}
+</ul>
+
+
+<a href="/">⬅️ Volver a tienda</a>
+
+<script src="/js/admin.js"></script>

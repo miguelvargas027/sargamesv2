@@ -1,0 +1,16 @@
+<h1>Tu Carrito</h1>
+
+<ul id="lista-carrito" class="carrito-lista"></ul>
+
+<div class="botones-carrito">
+  <button class="btn btn-confirmar" onclick="enviarCarrito()">✅ Confirmar pedido</button>
+  <button class="btn btn-vaciar" onclick="vaciarCarrito()">🗑️ Vaciar carrito</button>
+</div>
+
+<a href="/" class="btn btn-volver">⬅️ Volver a productos</a>
+
+<script>
+  window.productos = {{{json productos}}};
+</script>
+<script src="/js/carrito.js"></script>
+

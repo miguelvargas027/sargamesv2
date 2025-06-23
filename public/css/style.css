@@ -1,0 +1,172 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #003049;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #003049;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+}
+
+form {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+form input, form button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #007f91;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005f6b;
+}
+
+ul#lista-productos li {
+  background: white;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button,
+.btn {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-admin {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+
+.btn-add {
+  background-color: #264653;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #219ebc;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #e63946;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #19789a;
+}
+
+.btn-delete:hover {
+  background-color: #c32b3f;
+}
+
+.btn-add:hover,
+.btn-admin:hover {
+  background-color: #1b7a71;
+}
+
+/* Carrito de Compras */
+
+.carrito-lista {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.carrito-item {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.botones-carrito {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+}
+
+.btn-confirmar {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+.btn-vaciar {
+  background-color: #e76f51;
+  color: white;
+}
+
+.btn-volver {
+  background-color: #264653;
+  color: white;
+}
